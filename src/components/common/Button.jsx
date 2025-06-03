@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonIcon } from "./Icon";
 import { NavLink } from "react-router-dom";
 
-const Button = ({ btn_clr, btn_text, link }) => {
+const ButtonComp = ({ btn_clr, btn_text, link }) => {
   return (
     <div className=" inline-block">
     <NavLink
@@ -17,4 +17,4 @@ const Button = ({ btn_clr, btn_text, link }) => {
   );
 };
 
-export default Button;
+export default ButtonComp;

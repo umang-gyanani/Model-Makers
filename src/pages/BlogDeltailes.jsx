@@ -13,7 +13,7 @@ import {
 import SkyRocketImag from "../assets/image/png/skyrockate_img.png";
 import MyJourneyImag from "../assets/image/png/Myjourney_img.png";
 import EarningImg from "../assets/image/png/Earning_img.png";
-import Button from "../components/common/button";
+import Button from "../components/common/Button";
 const BlogDeltailes = () => {
   return (
     <>

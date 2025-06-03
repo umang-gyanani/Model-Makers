@@ -1,6 +1,6 @@
 import React from "react";
 import FormImg from "../assets/image/png/formgirl_img.png";
-import Button from "../components/common/button";
+import Button from "../components/common/Button";
 import { ReviewData } from "../components/common/DummyData";
 import SliderCard from "../components/common/SliderCard";
 import Faq from "../components/common/Faq";

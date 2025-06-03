@@ -1,7 +1,6 @@
 import React from "react";
 import AboutStartImg from "../assets/image/png/aboutstart_img.png";
-
-import Button from "../components/common/button";
+import Button from "../components/common/Button";
 import { WhatWeDoData } from "../components/common/DummyData";
 function About() {
   return (

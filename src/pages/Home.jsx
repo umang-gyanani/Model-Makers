@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { ReviewData, TalentCardData } from "../components/common/DummyData";
 import TrustedImg from "../assets/image/png/trusted_img.png";
-import Button from "../components/common/button";
+import Button from "../components/common/Button";
 import YahooImg from "../assets/image/png/Yahoo_img.png";
 import TimelineGirl from "../assets/image/png/Timeline_girlimg.png";
 import {

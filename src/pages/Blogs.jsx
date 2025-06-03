@@ -1,6 +1,6 @@
 import React from "react";
 import { WhatWeDoData } from "../components/common/DummyData";
-import Button from "../components/common/button";
+import Button from "../components/common/Button";
 
 function Blogs() {
   return (
