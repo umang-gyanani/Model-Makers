@@ -1,16 +1,11 @@
 import React from "react";
-
 import "./App.css";
-import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Footer from "./components/common/Footer";
 import Talents from "./pages/Talents";
 import Blogs from "./pages/Blogs";
 import BlogDeltailes from "./pages/BlogDeltailes";
-import Button from "./components/common/button";
 import { Link, Route, Routes } from "react-router-dom";
-import { LogoIcon } from "./components/common/Icon";
 import Referrel from "./pages/Referrel";
 import Layout from "./Layout/Layout";
 function App() {
