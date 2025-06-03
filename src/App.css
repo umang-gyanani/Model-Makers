@@ -1,0 +1,157 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: circe;
+  src: url(./assets/circe/CRC65.otf);
+}
+
+body {
+  font-family: circe;
+}
+
+.bg_image {
+  background-image: url(./assets/image/png/header_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+
+}
+
+.reviewCard_bg {
+  background-image: url(./assets/image/png/reviewcard_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.marketing_bg {
+  background-image: url(./assets/image/png/Marketing_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.slick-track {
+  flex: 1 !important;
+}
+
+.Yahoo_bg {
+  background-image: url(./assets/image/png/yahoo_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.talent_bg {
+  background-image: url(./assets/image/png/Talent_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.talent_marie_img {
+  background-image: url(./assets/image/png/marie_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.talent_juliana_img {
+  background-image: url(./assets/image/png/talent_juliana.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.talent_saarah_img {
+  background-image: url(./assets/image/png/talent_saarah.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Timeline_bg {
+  background-image: url(./assets/image/png/timeline_bluebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Creator_sliderbg {
+  background-image: url(./assets/image/png/Creator_sliderbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.getpaid_bg {
+  background-image: url(./assets/image/png/Getpaid_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.OurTeam_bg {
+  background-image: url(./assets/image/png/ourTeam_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_bg {
+  background-image: url(./assets/image/png/Footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.aboutWhat_bg {
+  background-image: url(./assets/image/png/Aboutwhatwe_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.expert_bg {
+  background-image: url(./assets/image/png/expert_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width:768px) {
+  .blue_bg {
+    background-image: url(./assets/image/png/blue_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .blue_blogs_bg::after {
+    content: "";
+    background-image: url(./assets/image/png/blue_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+  }
+}
+
+.form_bg {
+  background-image: url(./assets/image/png/form_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.formcard_bg {
+  background-image: url(./assets/image/png/referalcard_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
