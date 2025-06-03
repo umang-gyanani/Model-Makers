@@ -63,17 +63,6 @@ body {
 
 }
 
-.talent_juliana_img {
-  background-image: url(./assets/image/png/talent_juliana.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.talent_saarah_img {
-  background-image: url(./assets/image/png/talent_saarah.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .Timeline_bg {
   background-image: url(./assets/image/png/timeline_bluebg.png);
@@ -153,5 +142,5 @@ body {
   background-image: url(./assets/image/png/referalcard_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
- 
+
 }
