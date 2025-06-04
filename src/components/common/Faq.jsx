@@ -17,9 +17,9 @@ const Faq = () => {
           <div className="grid gap-[69px] lg:grid-cols-2 grid-cols-1">
             {/* Title */}
             <div data-aos="fade-right" data-aos-duration="1000">
-              <p className="text-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
+              <p className="font-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
                 frequently asked{" "}
-                <span className="text-normal text-[#008CCF] capitalize">
+                <span className="font-normal text-[#008CCF] capitalize">
                   questions
                 </span>
               </p>
@@ -41,7 +41,7 @@ const Faq = () => {
                       }`}
                       onClick={() => onhadelclick(i)}
                     >
-                      <p className="text-bold text-[20px]">{v.title}</p>
+                      <p className="font-bold text-[20px]">{v.title}</p>
                       <div
                         className={`${faqs === i ? "-rotate-180" : "rotate-0"}`}
                       >
@@ -53,7 +53,7 @@ const Faq = () => {
                         faqs === i ? "max-h-[200px]" : "max-h-[0px]"
                       } overflow-hidden transition-all duration-700`}
                     >
-                      <p className="text-normal text-[18px] text-[#4C4E55] mt-[8px]">
+                      <p className="font-normal text-[18px] text-[#4C4E55] mt-[8px]">
                         {v.Discription}
                       </p>
                     </div>

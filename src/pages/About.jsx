@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       {/* ========================When it start======= */}
-      <section className="pt-[69px]">
+      <section className="pt-[69px] overflow-hidden">
         <div className="container max-w-[1140px] m-auto px-3">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center">
             <img
@@ -16,18 +16,18 @@ function About() {
               data-aos="fade-right"
             />
             <div data-aos="fade-left">
-              <p className="text-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
+              <p className="font-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
                 when it{" "}
-                <span className="text-normal text-[#00AFEF] capitalize">
+                <span className="font-normal text-[#00AFEF] capitalize">
                   starts?
                 </span>
               </p>
-              <p className="text-normal text-[18px] text-[#4C4E55] pt-[10px]">
-                <span className="text-bold">Emilly jones</span> founded Model
+              <p className="font-normal text-[18px] text-[#4C4E55] pt-[10px]">
+                <span className="font-bold">Emilly jones</span> founded Model
                 Makers Elite with a vision – to create a platform where talented
                 individuals like you can truly shine and succeed.
               </p>
-              <p className="text-normal text-[18px] text-[#4C4E55]">
+              <p className="font-normal text-[18px] text-[#4C4E55]">
                 Having experienced the journey as a content creator myself, I
                 understand the challenges and the joys that come with it. That's
                 why at Model Makers Elite, we strive to be more than just a
@@ -39,15 +39,15 @@ function About() {
       </section>
 
       {/* ==========whatwedo=========== */}
-      <section>
+      <section className="overflow-hidden">
         <div className="aboutWhat_bg">
           <div
             className="text-center pt-[50px] md:pt-[60px]  lg:pt-[83px] pb-[20px]  md:pb-[50px] lg:pb-[69px]"
             data-aos="fade-up"
           >
-            <p className="text-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
+            <p className="font-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
               what{" "}
-              <span className="text-normal text-[#00AFEF] capitalize">
+              <span className="font-normal text-[#00AFEF] capitalize">
                 we do
               </span>
             </p>
@@ -84,10 +84,10 @@ function About() {
                           className=" w-full md:w-6/12"
                           data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
                         >
-                          <p className="text-bold text-[28px] sm:text-[32px]  lg:text-[44px] text-black md:text-white py-[0px] md:py-[55px] uppercase lg:py-[40px]">
+                          <p className="font-bold text-[28px] sm:text-[32px]  lg:text-[44px] text-black md:text-white py-[0px] md:py-[55px] uppercase lg:py-[40px]">
                             {v.title}
                           </p>
-                          <p className="text-normal text-[18px] text-[#4C4E55] pt-[31px] pb-[24px]">
+                          <p className="font-normal text-[18px] text-[#4C4E55] pt-[31px] pb-[24px]">
                             {v.Discription}
                           </p>
                           <Button btn_text="apply now" btn_clr="#00AFEF" />
@@ -102,7 +102,7 @@ function About() {
         </div>
       </section>
       {/* ==============Contentplaning================= */}
-      <section>
+      <section className="overflow-hidden">
         <div className="expert_bg  mt-[70px] sm:mt-[100px] md:mt-[300px] lg:mt-[420px]">
           <div className="container max-w-[1140px] m-auto px-3 ">
             <div
@@ -113,20 +113,20 @@ function About() {
                 className=" w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
                 data-aos="fade-right"
               >
-                <p className="text-bold  text-[28px] sm:text-[36px] lg:text-[44px] text-white leading-[118%] uppercase ">
+                <p className="font-bold  text-[28px] sm:text-[36px] lg:text-[44px] text-white leading-[118%] uppercase ">
                   the{" "}
-                  <span className="text-normal text-[#00AFEF] capitalize">
+                  <span className="font-normal text-[#00AFEF] capitalize">
                     expert
                   </span>{" "}
                   behind{" "}
                 </p>
-                <p className="text-normal text-base sm:text-[18px] text-white pt-[10px] pb-[29px]">
+                <p className="font-normal text-base sm:text-[18px] text-white pt-[10px] pb-[29px]">
                   Having experienced the journey as a content creator myself, I
                   understand the challenges and the joys that come with it.
                   That's why at Model Makers Elite, we strive to be more than
                   just a support system – we are your partners in growth.
                   <p
-                    className="text-normal text-base sm:text-[18px] text-white"
+                    className="font-normal text-base sm:text-[18px] text-white"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
@@ -144,10 +144,10 @@ function About() {
                 >
                   <div className=" border-2 border-[#00AFEF]"></div>
                   <div className="flex flex-col">
-                    <p className="text-bold text-[24px] text-white uppercase">
+                    <p className="font-bold text-[24px] text-white uppercase">
                       Emilly jones
                     </p>
-                    <p className="text-bold text-[20px] text-[#B4B5BA] pt-[7px]">
+                    <p className="font-bold text-[20px] text-[#B4B5BA] pt-[7px]">
                       founder & CEO
                     </p>
                   </div>

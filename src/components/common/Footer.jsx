@@ -9,11 +9,11 @@ function Footer() {
       <section>
         <div className="footer_bg">
           <div className="flex flex-col items-center justify-center h-[100vh]">
-            <p className="text-bold  text-[28px] sm:text-[36px] lg:text-[44px] text-white uppercase max-w-[517px] text-center leading-[118%]">
+            <p className="font-bold  text-[28px] sm:text-[36px] lg:text-[44px] text-white uppercase max-w-[517px] text-center leading-[118%]">
               be a part of the{" "}
-              <span className="text-normal capitalize">thriving</span> community
+              <span className="font-normal capitalize">thriving</span> community
             </p>
-            <p className="text-normal text-base sm:text-[18px] text-white pt-[8px] pb-[31px] text-center max-w-[638px]">
+            <p className="font-normal text-base sm:text-[18px] text-white pt-[8px] pb-[31px] text-center max-w-[638px]">
               Ready to embark on a journey of excitement and luxury? Contact us
               today to discover the allure of our models or to explore the
               opportunities of joining our exclusive agency.
@@ -29,19 +29,19 @@ function Footer() {
           <div className="flex flex-col items-center justify-center pt-[76px]">
             <FooterLogo />
             <ul className="flex flex-wrap items-center gap-[34px] pt-[25px]">
-              <li className="text-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6]">
                 <Link to={"/"}>Home</Link>
               </li>
-              <li className="text-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6]">
                 <Link to={"/about"}>About us</Link>
               </li>
-              <li className="text-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6]">
                 <Link to={"/talents"}>Talents</Link>
               </li>
-              <li className="text-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6]">
                 <Link to={"/referrel"}> Referral Program</Link>
               </li>
-              <li className="text-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6]">
               <Link to={"/blogs"}>Blogs</Link></li>
             </ul>
           </div>
@@ -53,17 +53,17 @@ function Footer() {
                 <InstaGramIcon inside_clr="#9095A642" outer_clr="#9095A642" />
               </div>
               <div className="flex items-center gap-[27px]">
-                <p className="text-normal text-[16px] text-[#B0B1B6] ">
+                <p className="font-normal text-[16px] text-[#B0B1B6] ">
                   Terms of Service
                 </p>
-                <p className="text-normal text-[16px] text-[#B0B1B6] ">
+                <p className="font-normal text-[16px] text-[#B0B1B6] ">
                   Privacy policy
                 </p>
               </div>
             </div>
           </div>
           <div className="border border-[#33353D] w-full "></div>
-          <p className="text-normal text-[16px] text-[#B0B1B6] text-center py-[20px]">
+          <p className="font-normal text-[16px] text-[#B0B1B6] text-center py-[20px]">
             Copyright@2020 | All Rights Reserved
           </p>
         </div>

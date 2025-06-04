@@ -4,7 +4,7 @@ import Button from "../components/common/Button";
 
 function Blogs() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {WhatWeDoData.map((v, i) => {
         return (
           <div
@@ -30,10 +30,10 @@ function Blogs() {
                       className="w-full md:w-6/12"
                       data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
                     >
-                      <p className="text-bold text-[28px] sm:text-[30px] lg:text-[44px] text-black md:text-white py-[0px] uppercase ">
+                      <p className="font-bold text-[28px] sm:text-[30px] lg:text-[44px] text-black md:text-white py-[0px] uppercase ">
                         {v.title}
                       </p>
-                      <p className="text-normal text-[18px] py-5 text-black md:text-[#fcfcfc]">
+                      <p className="font-normal text-[18px] py-5 text-black md:text-[#fcfcfc]">
                         {v.Discription}
                       </p>
                       <Button

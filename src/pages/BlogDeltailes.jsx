@@ -17,25 +17,25 @@ import Button from "../components/common/Button";
 const BlogDeltailes = () => {
   return (
     <>
-      <section>
+      <section className="overflow-hidden">
         <div className="bg-[#00AFEF0A]">
           <div className="container max-w-[1140px] m-auto px-3 mt-[76px]">
             <div className="grid grid-cols-1 md:grid-cols-2  h-[calc(100vh-76px)] lg:h-[600px] items-center  pt-[60px]">
               <div>
-                <p className="text-bold text-[24px] sm:text-[36px] lg:text-[44px] uppercase leading-[118%]">
+                <p className="font-bold text-[24px] sm:text-[36px] lg:text-[44px] uppercase leading-[118%]">
                   best places for your photoshoot across the world
                 </p>
                 <div className="flex items-center gap-[10px] pt-[11px]">
-                  <p className="text-normal text-[18px] text-[#494D55] border-r-2 pr-[10px]  border-[#008CCF]">
+                  <p className="font-normal text-[18px] text-[#494D55] border-r-2 pr-[10px]  border-[#008CCF]">
                     8 mins read
                   </p>
-                  <p className="text-normal text-[18px] text-[#494D55]">
+                  <p className="font-normal text-[18px] text-[#494D55]">
                     June 12, 2023
                   </p>
                 </div>
                 <div className="flex items-center gap-[10px] mt-2">
                   <img src={emailie} alt="emilie" />
-                  <p className="text-bold text-[20px]">Emilie James</p>
+                  <p className="font-bold text-[20px]">Emilie James</p>
                 </div>
                 <div className=" flex gap-3 items-center mt-5 sm:mt-20">
                   <TwiterIcon />
@@ -56,7 +56,7 @@ const BlogDeltailes = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="overflow-hidden">
         <div className=" container max-w-[840px] mx-auto px-3 mt-10">
           <p className=" text-xl text-[#01030D]" data-aos="fade-up">
             Captivating visuals are the essence of successful content on
@@ -93,13 +93,13 @@ const BlogDeltailes = () => {
                   />
                 </div>
                 <p
-                  className="text-bold text-[24px] text-[#008CCF] mt-[62px]"
+                  className="font-bold text-[24px] text-[#008CCF] mt-[62px]"
                   data-aos="fade-right"
                 >
                   The Black Forest, Germany - Mystical Wonderland
                 </p>
                 <p
-                  className="text-normal text-[20px] mt-[12px]"
+                  className="font-normal text-[20px] mt-[12px]"
                   data-aos="fade-left"
                 >
                   The Black Forest in Germany's southwestern region provides an
@@ -118,7 +118,7 @@ const BlogDeltailes = () => {
           })}
         </div>
       </section>
-      <section className="OurTeam_bg">
+      <section className="OurTeam_bg overflow-hidden">
         <div className=" py-[60px] md:pt-[169px] md:pb-[114px]">
           <p
             className="font-bold  flex flex-row-reverse items-center justify-center gap-2 text-[28px] sm:text-[36px] lg:text-[44px] uppercase text-center"
@@ -139,11 +139,11 @@ const BlogDeltailes = () => {
                     alt="sky"
                     className="rounded-tl-[20px] rounded-tr-[20px]"
                   />
-                  <p className="text-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
+                  <p className="font-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
                     10 Tips to Skyrocket Your OnlyFans Earnings
                   </p>
                   <button className="flex items-center gap-[16px] bg-white border border-white">
-                    <p className="text-bold text-[16px] text-[#00AFEF] uppercase">
+                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
                       read more
                     </p>
                     <ReadMoreIcon />
@@ -158,11 +158,11 @@ const BlogDeltailes = () => {
                     alt="sky"
                     className="rounded-tl-[20px] rounded-tr-[20px]"
                   />
-                  <p className="text-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
+                  <p className="font-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
                     10k to 1000k: my journey of success
                   </p>
                   <button className="flex items-center gap-[16px] bg-white border border-white">
-                    <p className="text-bold text-[16px] text-[#00AFEF] uppercase">
+                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
                       read more
                     </p>
                     <ReadMoreIcon />
@@ -177,11 +177,11 @@ const BlogDeltailes = () => {
                     alt="sky"
                     className="rounded-tl-[20px] rounded-tr-[20px]"
                   />
-                  <p className="text-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
+                  <p className="font-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
                     earning $100 per day is not much hard...
                   </p>
                   <button className="flex items-center gap-[16px] bg-white border border-white">
-                    <p className="text-bold text-[16px] text-[#00AFEF] uppercase">
+                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
                       read more
                     </p>
                     <ReadMoreIcon />

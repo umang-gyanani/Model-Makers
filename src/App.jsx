@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Talents from "./pages/Talents";
 import Blogs from "./pages/Blogs";
 import BlogDeltailes from "./pages/BlogDeltailes";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Referrel from "./pages/Referrel";
 import Layout from "./Layout/Layout";
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [pathname]);
   return (
     <div>
       <Routes>

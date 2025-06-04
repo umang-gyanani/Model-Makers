@@ -8,7 +8,7 @@ const Referrel = () => {
   return (
     <>
       {/* ======================cards============ */}
-      <div className="reviewCard_bg py-[90px]">
+      <div className="reviewCard_bg py-[90px] overflow-hidden">
         <section className="container max-w-[1140px] m-auto px-3 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-[66px]">
             {ReviewData.map((v, i) => {
@@ -20,10 +20,10 @@ const Referrel = () => {
                   data-aos-delay={i * 100}
                 >
                   {v.image}
-                  <p className="text-bold text-[24px] pt-[30px] pb-[8px]">
+                  <p className="font-bold text-[24px] pt-[30px] pb-[8px]">
                     {v.title}
                   </p>
-                  <p className="text-normal text-[18px] text-[#4C4E55] text-center">
+                  <p className="font-normal text-[18px] text-[#4C4E55] text-center">
                     {v.Discription}
                   </p>
                 </div>
@@ -33,7 +33,7 @@ const Referrel = () => {
         </section>
       </div>
       {/* ==================form============= */}
-      <section>
+      <section className="overflow-hidden">
         <div className="form_bg relative">
           <div className=" container max-w-[1180px] px-3 mx-auto py-[60px] md:py-[80px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-20 lg:gap-10 xl:gap-[54px]">
@@ -149,7 +149,7 @@ const Referrel = () => {
       </section>
 
       {/* =====================Formcard================ */}
-      <section>
+      <section className="overflow-hidden">
         <div className="formcard_bg">
           <div className=" flex flex-col items-center justify-center py-[65px] sm:py-[80px] md:py-[90px] lg:py-[154px] ">
             <p
