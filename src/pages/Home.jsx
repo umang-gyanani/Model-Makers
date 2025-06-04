@@ -55,7 +55,7 @@ function Home() {
     <>
       {/* ================ReviewCard=========== */}
 
-      <div className="reviewCard_bg py-[90px] overflow-hidden">
+      <div className="reviewCard_bg py-[50px] md:py-[70px] lg:py-[90px] overflow-hidden">
         <section className="container max-w-[1140px] m-auto px-3 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-[66px]">
             {ReviewData.map((v, i) => {
@@ -82,7 +82,7 @@ function Home() {
 
       {/* ===================TrustedTeam================= */}
 
-      <section className="pt-[50px] pb-[110px] flex justify-center overflow-hidden">
+      <section className="pt-[50px] pb-[50px] md:pb-[70px] lg:pb-[110px] flex justify-center overflow-hidden">
         <div className="container max-w-[1140px] m-auto px-3">
           <div className="flex flex-col gap-y-10 md:flex-row items-center">
             {/* Left Image */}
@@ -412,7 +412,7 @@ function Home() {
               <span className="text-normal capitalize">special</span>?
             </p>
 
-            <div className="relative after:absolute after:contents-[] after:top-[20px] after:-left-[26px] after:bg-white after:h-[76%] xl:after:h-[80%] after:w-[2px]">
+            <div className="relative after:absolute after:contents-[] after:top-[20px] after:-left-[26px] after:bg-white after:h-[76%] xl:after:h-[80%] after:w-[2px] ">
               {TimeLineData.map((item, i) => (
                 <div
                   key={i}
@@ -437,7 +437,9 @@ function Home() {
               ))}
             </div>
 
-            <Button btn_text="Book call now!" btn_clr="#18314F" />
+            <div className="mb-[50px] lg:mb-[0px]">
+              <Button btn_text="Book call now!" btn_clr="#18314F" />
+            </div>
           </div>
         </div>
       </section>

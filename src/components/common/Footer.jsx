@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { FaceBookIcon, FooterLogo, InstaGramIcon, TwiterIcon } from "./Icon";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -17,29 +18,36 @@ function Footer() {
               today to discover the allure of our models or to explore the
               opportunities of joining our exclusive agency.
             </p>
-            <Button btn_text="Apply now!" btn_clr="#18314F" />
+            <Button
+              btn_text="Apply now!"
+              btn_clr="#18314F"
+              link="/blogdeltailes"
+            />
           </div>
         </div>
         <div className="bg-black px-3">
           <div className="flex flex-col items-center justify-center pt-[76px]">
             <FooterLogo />
             <ul className="flex flex-wrap items-center gap-[34px] pt-[25px]">
-              <li className="text-normal text-[14px] text-[#B0B1B6]">Home</li>
               <li className="text-normal text-[14px] text-[#B0B1B6]">
-                About us
+                <Link to={"/"}>Home</Link>
               </li>
               <li className="text-normal text-[14px] text-[#B0B1B6]">
-                Talents
+                <Link to={"/about"}>About us</Link>
               </li>
               <li className="text-normal text-[14px] text-[#B0B1B6]">
-                Referral Program
+                <Link to={"/talents"}>Talents</Link>
               </li>
-              <li className="text-normal text-[14px] text-[#B0B1B6]">Blogs</li>
+              <li className="text-normal text-[14px] text-[#B0B1B6]">
+                <Link to={"/referrel"}> Referral Program</Link>
+              </li>
+              <li className="text-normal text-[14px] text-[#B0B1B6]">
+              <Link to={"/blogs"}>Blogs</Link></li>
             </ul>
           </div>
           <div className="container max-w-[1140px] mx-auto px-3">
             <div className="flex flex-wrap gap-y-10 items-center justify-between pt-[43px] pb-[11px]">
-              <div className="flex  items-center gap-5 sm:gap-[12px] ">
+              <div className="flex  items-center gap-5 sm:gap-[12px] cursor-pointer">
                 <TwiterIcon inside_clr="#9095A642" outer_clr="#9095A642" />
                 <FaceBookIcon inside_clr="#9095A642" outer_clr="#9095A642" />
                 <InstaGramIcon inside_clr="#9095A642" outer_clr="#9095A642" />

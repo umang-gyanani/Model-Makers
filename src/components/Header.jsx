@@ -42,7 +42,7 @@ const Header = () => {
               <ul
                 className={`flex items-center max-lg:fixed max-lg:top-[76px] lg:text-white text-black  ${
                   shownav ? "max-lg:left-0" : "max-lg:-left-full"
-                } max-lg:bg-white max-lg:z-50 max-lg:w-full max-lg:h-[calc(100vh-76px)] gap-[32px] max-lg:flex-col max-lg:items-center max-lg:justify-around duration-700`}
+                } max-lg:bg-white max-lg:z-50 max-lg:w-full max-lg:h-[calc(100vh-76px)] gap-[32px] max-lg:flex-col max-lg:items-center max-lg:justify-center duration-700`}
               >
                 <li className="">
                   {" "}

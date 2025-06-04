@@ -9,6 +9,7 @@ const SliderCard = () => {
 
   const settings = {
     dots: true,
+    dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 500,
     slidesToShow: 2.3,

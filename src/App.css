@@ -18,8 +18,7 @@ body {
   background-image: url(./assets/image/png/header_img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  background-position: center;
+ background-position: 80% !important;
 
 }
 
@@ -80,8 +79,9 @@ body {
   background-image: url(./assets/image/png/Getpaid_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
   background-attachment: fixed;
+  
 }
 
 .OurTeam_bg {
@@ -107,6 +107,7 @@ body {
   background-image: url(./assets/image/png/expert_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 80%;
   background-attachment: fixed;
 }
 
@@ -143,4 +144,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+.custom-dots li button {
+  width: 30px;
+  height: 30px;
+  margin: 0px 2px
+}
+
+.custom-dots li button:before {
+  color: #18314F !important;
+  /* Dot color */
 }
