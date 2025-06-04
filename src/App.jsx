@@ -11,10 +11,41 @@ import Layout from "./Layout/Layout";
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
+    
   }, [pathname]);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  
   return (
     <div>
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-8 cursor-pointer right-8 p-4 bg-gradient-to-tr from-[#00AFEF] to-[#18314F] text-white rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out animate-bounce z-50"
+        aria-label="Scroll to top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
+
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
