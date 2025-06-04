@@ -1,13 +1,13 @@
 export function LogoIcon() {
   return (
     <svg
-      width="275"
+      width="100%"
       height="56"
       viewBox="0 0 275 56"
       fill="none"
       link="http://www.w3.org/1999/xlink"
     >
-      <rect width="275" height="56" fill="url(#pattern0_88_175)" />
+      <rect width="100%" height="56" fill="url(#pattern0_88_175)" />
       <defs>
         <pattern
           id="pattern0_88_175"
@@ -655,8 +655,8 @@ export function ShareIcon({ inside_clr, outer_clr }) {
 export function MenuIcon() {
   return (
     <svg
-      width="24"
-      height="24"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -685,8 +685,8 @@ export function MenuIcon() {
 export function CrossIcon() {
   return (
     <svg
-      width="24"
-      height="24"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

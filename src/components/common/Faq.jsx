@@ -12,7 +12,7 @@ const Faq = () => {
   return (
     <>
       {/* ====================FAQ======================= */}
-      <section className="pb-[60px] lg:py-[132px]">
+      <section className="pb-[60px] lg:py-[132px] overflow-hidden">
         <div className="container max-w-[1140px] m-auto px-3">
           <div className="grid gap-[69px] lg:grid-cols-2 grid-cols-1">
             {/* Title */}

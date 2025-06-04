@@ -34,34 +34,58 @@ const Header = () => {
       <div className="bg-[#18314F0F] backdrop-blur-md fixed w-full z-50 top-0 left-0">
         <div className="container max-w-[1140px] mx-auto px-3">
           <nav className="flex justify-between items-center py-[10px]">
-            <Link to={"/"}>
+            <Link to={"/"} className="w-[250px] ">
               <LogoIcon />
             </Link>
 
             <div>
               <ul
-                className={`flex items-center max-lg:fixed max-lg:top-[76px] text-white  ${
+                className={`flex items-center max-lg:fixed max-lg:top-[76px] lg:text-white text-black  ${
                   shownav ? "max-lg:left-0" : "max-lg:-left-full"
                 } max-lg:bg-white max-lg:z-50 max-lg:w-full max-lg:h-[calc(100vh-76px)] gap-[32px] max-lg:flex-col max-lg:items-center max-lg:justify-around duration-700`}
               >
                 <li className="">
                   {" "}
-                  <Link to={"/about"} className="text-normal text-[16px]">
+                  <Link
+                    to={"/about"}
+                    onClick={() => {
+                      setShownav(false);
+                    }}
+                    className="text-normal text-[16px]"
+                  >
                     About us
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/talents"} className="text-normal text-[16px]">
+                  <Link
+                    to={"/talents"}
+                    onClick={() => {
+                      setShownav(false);
+                    }}
+                    className="text-normal text-[16px]"
+                  >
                     Talents
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/referrel"} className="text-normal text-[16px]">
+                  <Link
+                    to={"/referrel"}
+                    onClick={() => {
+                      setShownav(false);
+                    }}
+                    className="text-normal text-[16px]"
+                  >
                     Referral Program
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/blogs"} className="text-normal text-[16px]">
+                  <Link
+                    to={"/blogs"}
+                    onClick={() => {
+                      setShownav(false);
+                    }}
+                    className="text-normal text-[16px]"
+                  >
                     Blogs
                   </Link>
                 </li>

@@ -157,6 +157,37 @@ export const TalentCardData = [
   },
 ];
 
+export const TimeLineData = [
+  
+    // Array to map timeline items with animation
+    {
+      title: "Privacy and Security",
+      description:
+        "Your privacy and security are our top priorities. We provide a safe environment for both content creators and subscribers, using advanced encryption and data protection measures.",
+    },
+    {
+      title: "Unparalleled Support",
+      description:
+        "We offer unparalleled support, assisting them in optimizing their content, engaging with their audience, and developing successful strategies to maximize their earnings on OnlyFans.",
+    },
+    {
+      title: "work from wherever you want",
+      description:
+        "Embrace the freedom of working from any location. Whether it's from the comfort of your home, a serene beach, or an exotic destination, you have the liberty to create content on your terms.",
+    },
+    {
+      title: "Community and Networking",
+      description:
+        "Join a vibrant community of like-minded individuals within our agency. Connect with other content creators, exchange ideas, and gain valuable insights into the industry.",
+    },
+    {
+      title: "exclusive events for our models only",
+      description:
+        "These events are designed to foster networking, skill development, and collaboration among our talented models, creating a supportive and empowering community.",
+    },
+  
+];
+
 export const HeaderData = [
   {
     path: "/",
@@ -271,3 +302,4 @@ export const AboutGirlsData = [
     Eyes: "Black",
   },
 ];
+

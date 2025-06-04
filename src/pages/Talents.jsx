@@ -11,7 +11,12 @@ function Talents() {
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-5  mt-[60px] md:mt-[91px]  lg:mt-[151px] mb-[60px] md:mb-[91px]">
             {AboutGirlsData.map((v , i) => {
               return (
-                <div className="relative">
+                <div
+                  key={i}
+                  className="relative"
+                  data-aos="fade-up"
+                  data-aos-delay={i * 100}
+                >
                   <img width={"100%"} src={v.image} alt="marie" />
                   <div className="bg-[#18314F] absolute backdrop-blur-md rounded-t-[4px] rounded-bl-[4px] rounded-br-[20px] w-[98%] p-[17px_10px_18px_13px] bottom-3 left-2/4 -translate-x-2/4">
                     <div className="flex justify-between items-center">

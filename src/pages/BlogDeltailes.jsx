@@ -56,51 +56,74 @@ const BlogDeltailes = () => {
           </div>
         </div>
       </section>
-      <div className=" container max-w-[840px] mx-auto px-3 mt-10">
-        <p className=" text-xl text-[#01030D]">
-          Captivating visuals are the essence of successful content on OnlyFans.
-          When it comes to creating eye-catching photos and videos, location
-          matters! In this blog, we will take you on a virtual journey to some
-          of the most picturesque places around the world, perfect for your next
-          jaw-dropping photoshoot.
-        </p>
-        {[1, 2, 3].map((v, i) => {
-          return (
-            <div>
-              <h2 className=" text-[28px] sm:text-[36px] lg:text-[44px] text-[#01030D] mt-5 font-normal">
-                {i + 1}. Embrace Nature's Beauty
-              </h2>
-              <h4 className="text-[#008CCF] font-bold text-2xl uppercase my-3">
-                Maldives - Paradise Unveiled{" "}
-              </h4>
-              <p className=" text-xl text-[#01030D]">
-                Captivating visuals are the essence of successful content on
-                OnlyFans. When it comes to creating eye-catching photos and
-                videos, location matters! In this blog, we will take you on a
-                virtual journey to some of the most picturesque places around
-                the world, perfect for your next jaw-dropping photoshoot.
-              </p>
-              <div className=" max-w-[718px] mx-auto mt-3">
-                <img width={"100%"} src={soft_beautiful} alt="soft_beautiful" />
+      <section>
+        <div className=" container max-w-[840px] mx-auto px-3 mt-10">
+          <p className=" text-xl text-[#01030D]" data-aos="fade-up">
+            Captivating visuals are the essence of successful content on
+            OnlyFans. When it comes to creating eye-catching photos and videos,
+            location matters! In this blog, we will take you on a virtual
+            journey to some of the most picturesque places around the world,
+            perfect for your next jaw-dropping photoshoot.
+          </p>
+          {[1, 2, 3].map((v, i) => {
+            return (
+              <div key={i} data-aos="fade-up" data-aos-delay={i * 100}>
+                <h2 className=" text-[28px] sm:text-[36px] lg:text-[44px] text-[#01030D] mt-5 font-normal">
+                  {i + 1}. Embrace Nature's Beauty
+                </h2>
+                <h4 className="text-[#008CCF] font-bold text-2xl uppercase my-3">
+                  Maldives - Paradise Unveiled{" "}
+                </h4>
+                <p className=" text-xl text-[#01030D]">
+                  Captivating visuals are the essence of successful content on
+                  OnlyFans. When it comes to creating eye-catching photos and
+                  videos, location matters! In this blog, we will take you on a
+                  virtual journey to some of the most picturesque places around
+                  the world, perfect for your next jaw-dropping photoshoot.
+                </p>
+                <div
+                  className=" max-w-[718px] mx-auto mt-3"
+                  data-aos="zoom-in"
+                  data-aos-delay={i * 150}
+                >
+                  <img
+                    width={"100%"}
+                    src={soft_beautiful}
+                    alt="soft_beautiful"
+                  />
+                </div>
+                <p
+                  className="text-bold text-[24px] text-[#008CCF] mt-[62px]"
+                  data-aos="fade-right"
+                >
+                  The Black Forest, Germany - Mystical Wonderland
+                </p>
+                <p
+                  className="text-normal text-[20px] mt-[12px]"
+                  data-aos="fade-left"
+                >
+                  The Black Forest in Germany's southwestern region provides an
+                  enchanting backdrop, with dense forests, charming villages,
+                  and captivating trails, perfect for nature-inspired shoots.
+                </p>
+                <div
+                  className="mx-auto max-w-[718px] mt-3"
+                  data-aos="zoom-in-up"
+                  data-aos-delay={i * 150}
+                >
+                  <img width={"100%"} src={GermanyImg} alt="germany" />
+                </div>
               </div>
-              <p className="text-bold text-[24px] text-[#008CCF] mt-[62px]">
-                The Black Forest, Germany - Mystical Wonderland
-              </p>
-              <p className="text-normal text-[20px] mt-[12px]">
-                The Black Forest in Germany's southwestern region provides an
-                enchanting backdrop, with dense forests, charming villages, and
-                captivating trails, perfect for nature-inspired shoots.
-              </p>
-              <div className="mx-auto max-w-[718px] mt-3">
-                <img width={"100%"} src={GermanyImg} alt="germany" />
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </section>
       <section className="OurTeam_bg">
         <div className=" py-[60px] md:pt-[169px] md:pb-[114px]">
-          <p className="font-bold  flex flex-row-reverse items-center justify-center gap-2 text-[28px] sm:text-[36px] lg:text-[44px] uppercase text-center">
+          <p
+            className="font-bold  flex flex-row-reverse items-center justify-center gap-2 text-[28px] sm:text-[36px] lg:text-[44px] uppercase text-center"
+            data-aos="fade-up"
+          >
             articles{" "}
             <span className="font-normal text-[#00AFEF] capitalize">
               related

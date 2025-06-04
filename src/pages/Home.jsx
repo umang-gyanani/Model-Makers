@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { ReviewData, TalentCardData } from "../components/common/DummyData";
+import { ReviewData, TalentCardData, TimeLineData } from "../components/common/DummyData";
 import TrustedImg from "../assets/image/png/trusted_img.png";
 import Button from "../components/common/Button";
 import YahooImg from "../assets/image/png/Yahoo_img.png";
@@ -55,7 +55,7 @@ function Home() {
     <>
       {/* ================ReviewCard=========== */}
 
-      <div className="reviewCard_bg py-[90px]">
+      <div className="reviewCard_bg py-[90px] overflow-hidden">
         <section className="container max-w-[1140px] m-auto px-3 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-[66px]">
             {ReviewData.map((v, i) => {
@@ -82,7 +82,7 @@ function Home() {
 
       {/* ===================TrustedTeam================= */}
 
-      <section className="pt-[50px] pb-[110px] flex justify-center">
+      <section className="pt-[50px] pb-[110px] flex justify-center overflow-hidden">
         <div className="container max-w-[1140px] m-auto px-3">
           <div className="flex flex-col gap-y-10 md:flex-row items-center">
             {/* Left Image */}
@@ -123,7 +123,7 @@ function Home() {
 
       {/* ========================MarketingPartner================= */}
 
-      <section className="marketing_bg">
+      <section className="marketing_bg overflow-hidden">
         <div className="py-[40px] md:pt-[87px] md:pb-[106px]">
           <div className="container max-w-[1140px] m-auto px-3">
             <p className="uppercase text-bold text-[28px] sm:text-[36px] lg:text-[44px] text-white">
@@ -183,7 +183,7 @@ function Home() {
 
       {/* ==================Yahoo================================= */}
 
-      <section>
+      <section className="overflow-hidden">
         <div className="Yahoo_bg">
           <div className="container max-w-[1140px] m-auto px-3 relative z-30">
             <div className="md:pt-[147px] md:pb-[103px] py-[40px]">
@@ -312,7 +312,7 @@ function Home() {
 
       {/* ==================OnlyFans================== */}
 
-      <section>
+      <section className="overflow-hidden">
         <div className="py-[50px] md:pt-[90px] lg:pt-[168px] lg:pb-[164px]">
           <div className="container max-w-[1140px] m-auto px-3">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px]">
@@ -389,13 +389,13 @@ function Home() {
 
       {/* =====================Timeline============= */}
 
-      <section className="Timeline_bg lg:pe-3 py-10">
+      <section className="Timeline_bg lg:pe-3  overflow-hidden">
         <div className="grid gap-10 sm:gap-20 items-center grid-cols-1 lg:grid-cols-2">
           {/* Image with fade-right */}
           <img
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="w-full sm:w-[80%] rounded-0 sm:rounded-4xl lg:rounded-0 mx-auto lg:w-full"
+            className="w-full sm:w-[80%]  mx-auto lg:w-full"
             src={TimelineGirl}
             alt="timeline"
           />
@@ -412,35 +412,8 @@ function Home() {
               <span className="text-normal capitalize">special</span>?
             </p>
 
-            <div className="relative after:absolute after:contents-[] after:top-[40px] after:-left-[26px] after:bg-white after:h-[76%] xl:after:h-[80%] after:w-[2px]">
-              {[
-                // Array to map timeline items with animation
-                {
-                  title: "Privacy and Security",
-                  description:
-                    "Your privacy and security are our top priorities. We provide a safe environment for both content creators and subscribers, using advanced encryption and data protection measures.",
-                },
-                {
-                  title: "Unparalleled Support",
-                  description:
-                    "We offer unparalleled support, assisting them in optimizing their content, engaging with their audience, and developing successful strategies to maximize their earnings on OnlyFans.",
-                },
-                {
-                  title: "work from wherever you want",
-                  description:
-                    "Embrace the freedom of working from any location. Whether it's from the comfort of your home, a serene beach, or an exotic destination, you have the liberty to create content on your terms.",
-                },
-                {
-                  title: "Community and Networking",
-                  description:
-                    "Join a vibrant community of like-minded individuals within our agency. Connect with other content creators, exchange ideas, and gain valuable insights into the industry.",
-                },
-                {
-                  title: "exclusive events for our models only",
-                  description:
-                    "These events are designed to foster networking, skill development, and collaboration among our talented models, creating a supportive and empowering community.",
-                },
-              ].map((item, i) => (
+            <div className="relative after:absolute after:contents-[] after:top-[20px] after:-left-[26px] after:bg-white after:h-[76%] xl:after:h-[80%] after:w-[2px]">
+              {TimeLineData.map((item, i) => (
                 <div
                   key={i}
                   data-aos="fade-up"
@@ -450,19 +423,11 @@ function Home() {
                   }px] relative ${i === 4 ? "pb-[36px]" : ""}`}
                 >
                   <div
-                    className="h-[15px] absolute -left-8 w-[15px] bg-white rounded-full"
-                    style={{
-                      top:
-                        i === 0
-                          ? window.innerWidth >= 1280
-                            ? "39px"
-                            : "26px"
-                          : window.innerWidth >= 1280
-                          ? "65px"
-                          : "40px",
-                    }}
+                    className={`h-[15px] absolute -left-8 w-[15px] bg-white rounded-full ${
+                      i !== 0 ? "top-[39px]" : "top-[9px]"
+                    }`}
                   />
-                  <p className="text-bold text-[24px] text-white">
+                  <p className="text-bold text-[24px] text-white uppercase">
                     {item.title}
                   </p>
                   <p className="text-normal text-[18px] text-white">
@@ -493,7 +458,7 @@ function Home() {
 
       {/* ======================Getpaid================ */}
 
-      <section>
+      <section className="overflow-hidden">
         <div className="getpaid_bg">
           <div className="container max-w-[1140px] m-auto px-3">
             <div className="flex flex-row py-[80px] md:py-[178px]">
@@ -524,7 +489,7 @@ function Home() {
 
       {/* ====================OurTeam========================== */}
 
-      <section className="OurTeam_bg">
+      <section className="OurTeam_bg overflow-hidden">
         <div className="py-[60px] md:pt-[169px] md:pb-[114px]">
           {/* Heading */}
           <p
