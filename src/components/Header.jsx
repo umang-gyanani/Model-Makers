@@ -54,7 +54,7 @@ const Header = () => {
                     onClick={() => setShownav(false)}
                     className={`${
                       location.pathname === "/about" && " text-[#00AFEF]"
-                    } font-normal text-[16px]`}
+                    } font-normal text-[16px]  hover:text-[#20B8F1] duration-500`}
                   >
                     About us
                   </Link>
@@ -65,7 +65,7 @@ const Header = () => {
                     onClick={() => setShownav(false)}
                     className={`${
                       location.pathname === "/talents" && " text-[#00AFEF]"
-                    } font-normal text-[16px]`}
+                    } font-normal text-[16px] hover:text-[#20B8F1] duration-500`}
                   >
                     Talents
                   </Link>
@@ -76,7 +76,7 @@ const Header = () => {
                     onClick={() => setShownav(false)}
                     className={`${
                       location.pathname === "/referrel" && " text-[#00AFEF]"
-                    } font-normal text-[16px]`}
+                    } font-normal text-[16px] hover:text-[#20B8F1] duration-500`}
                   >
                     Referral Program
                   </Link>
@@ -87,7 +87,7 @@ const Header = () => {
                     onClick={() => setShownav(false)}
                     className={`${
                       location.pathname === "/blogs" && " text-[#00AFEF]"
-                    } font-normal text-[16px]`}
+                    } font-normal text-[16px] hover:text-[#20B8F1] duration-500`}
                   >
                     Blogs
                   </Link>
@@ -143,7 +143,10 @@ const Header = () => {
                       </p>
 
                       <div data-aos="zoom-in" data-aos-delay="400">
-                        <ButtonComp btn_text="Book Call Now" btn_clr="#20B8F1" />
+                        <ButtonComp
+                          btn_text="Book Call Now"
+                          btn_clr="#20B8F1"
+                        />
                       </div>
 
                       {location.pathname === "/" && (

@@ -464,7 +464,7 @@ function Home() {
       {/* ======================Getpaid================ */}
 
       <section className="overflow-hidden">
-        <div className="getpaid_bg">
+        <div className="getpaid_bg ">
           <div className="container max-w-[1140px] m-auto px-3">
             <div className="flex flex-row py-[80px] md:py-[178px]">
               <div
@@ -529,7 +529,7 @@ function Home() {
                     10 Tips to Skyrocket Your OnlyFans Earnings
                   </p>
                   <button className="flex items-center gap-[16px] bg-white border border-white">
-                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
+                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase cursor-pointer">
                       read more
                     </p>
                     <ReadMoreIcon />
@@ -556,7 +556,7 @@ function Home() {
                     10k to 1000k: my journey of success
                   </p>
                   <button className="flex items-center gap-[16px] bg-white border border-white">
-                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
+                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase cursor-pointer">
                       read more
                     </p>
                     <ReadMoreIcon />
@@ -583,7 +583,7 @@ function Home() {
                     earning $100 per day is not much hard...
                   </p>
                   <button className="flex items-center gap-[16px] bg-white border border-white">
-                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
+                    <p className="font-bold text-[16px] text-[#00AFEF] uppercase cursor-pointer">
                       read more
                     </p>
                     <ReadMoreIcon />

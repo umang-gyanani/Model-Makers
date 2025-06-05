@@ -1,6 +1,7 @@
 import React from "react";
 import { InstaGramIcon, TwiterIcon } from "../components/common/Icon";
 import { AboutGirlsData } from "../components/common/DummyData";
+import { Link } from "react-router-dom";
 
 function Talents() {
   return (
@@ -23,8 +24,12 @@ function Talents() {
                         {v.title}
                       </p>
                       <div className="flex gap-[14px] items-center">
-                        <TwiterIcon />
-                        <InstaGramIcon />
+                        <Link to="https://x.com/elitemodels">
+                          <TwiterIcon />
+                        </Link>
+                        <Link to="https://www.instagram.com/model_makerselite">
+                          <InstaGramIcon />
+                        </Link>
                       </div>
                     </div>
                     <div className="flex items-center flex-wrap gap-[10px] mt-2.5">

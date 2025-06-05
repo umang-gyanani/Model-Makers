@@ -18,7 +18,7 @@ body {
   background-image: url(./assets/image/png/header_img.png);
   background-repeat: no-repeat;
   background-size: cover;
- background-position: 80% !important;
+  background-position: 80% !important;
 
 }
 
@@ -81,7 +81,7 @@ body {
   background-size: cover;
   background-position: 80%;
   background-attachment: fixed;
-  
+
 }
 
 .OurTeam_bg {
@@ -145,6 +145,7 @@ body {
   background-size: cover;
 
 }
+
 .custom-dots li button {
   width: 30px;
   height: 30px;
@@ -154,4 +155,20 @@ body {
 .custom-dots li button:before {
   color: #18314F !important;
   /* Dot color */
+}
+
+.hover-effect svg {
+  transition: all 2s;
+}
+
+.hover-effect:hover svg {
+  transform: translateY(-10px);
+}
+
+.hover-effect:hover svg path {
+  fill: #00AFEF;
+}
+
+.hover-effect:hover svg circle {
+  fill: #20B8F129;
 }

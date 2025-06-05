@@ -29,28 +29,47 @@ function Footer() {
           <div className="flex flex-col items-center justify-center pt-[76px]">
             <FooterLogo />
             <ul className="flex flex-wrap items-center gap-[34px] pt-[25px]">
-              <li className="font-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6] hover:text-[#20B8F1] duration-300">
                 <Link to={"/"}>Home</Link>
               </li>
-              <li className="font-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6] hover:text-[#20B8F1] duration-300">
                 <Link to={"/about"}>About us</Link>
               </li>
-              <li className="font-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6] hover:text-[#20B8F1] duration-300">
                 <Link to={"/talents"}>Talents</Link>
               </li>
-              <li className="font-normal text-[14px] text-[#B0B1B6]">
+              <li className="font-normal text-[14px] text-[#B0B1B6] hover:text-[#20B8F1] duration-300">
                 <Link to={"/referrel"}> Referral Program</Link>
               </li>
-              <li className="font-normal text-[14px] text-[#B0B1B6]">
-              <Link to={"/blogs"}>Blogs</Link></li>
+              <li className="font-normal text-[14px] text-[#B0B1B6] hover:text-[#20B8F1] duration-300">
+                <Link to={"/blogs"}>Blogs</Link>
+              </li>
             </ul>
           </div>
           <div className="container max-w-[1140px] mx-auto px-3">
             <div className="flex flex-wrap gap-y-10 items-center justify-between pt-[43px] pb-[11px]">
               <div className="flex  items-center gap-5 sm:gap-[12px] cursor-pointer">
-                <TwiterIcon inside_clr="#9095A642" outer_clr="#9095A642" />
-                <FaceBookIcon inside_clr="#9095A642" outer_clr="#9095A642" />
-                <InstaGramIcon inside_clr="#9095A642" outer_clr="#9095A642" />
+                <div className="hover-effect">
+                  <Link to="https://x.com/elitemodels">
+                    <TwiterIcon inside_clr="#9095A642" outer_clr="#9095A642" />
+                  </Link>
+                </div>
+                <div className="hover-effect">
+                  <Link to="https://www.facebook.com/eliteworldgroup">
+                    <FaceBookIcon
+                      inside_clr="#9095A642"
+                      outer_clr="#9095A642"
+                    />
+                  </Link>
+                </div>
+                <div className="hover-effect">
+                  <Link to="https://www.instagram.com/model_makerselite">
+                    <InstaGramIcon
+                      inside_clr="#9095A642"
+                      outer_clr="#9095A642"
+                    />
+                  </Link>
+                </div>
               </div>
               <div className="flex items-center gap-[27px]">
                 <p className="font-normal text-[16px] text-[#B0B1B6] ">
