@@ -1,6 +1,5 @@
 import React, { useState} from "react";
 import { CrossIcon, LogoIcon, MenuIcon } from "./common/Icon";
-import Button from "../components/common/Button";
 import { Link, useLocation } from "react-router-dom";
 import HeaderSvg from "../assets/image/svg/header_svg.svg";
 import { HeaderData } from "./common/DummyData";
@@ -94,7 +93,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Button
+                  <ButtonComp
                     btn_text="Apply Now"
                     btn_clr="#18314F"
                     link="/blogdeltailes"

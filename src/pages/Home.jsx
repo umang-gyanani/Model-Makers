@@ -293,9 +293,9 @@ function Home() {
                 <img
                   src={v.image}
                   alt={v.image}
-                  className="w-full  grayscale group-hover:grayscale-0"
+                  className="w-full  grayscale group-hover:grayscale-0 duration-300"
                 />
-                <p className="font-bold text-[24px] text-white duration-500 -bottom-full absolute group-hover:bottom-4 uppercase left-[100px]">
+                <p className="font-bold text-[24px] text-white duration-300 -bottom-full absolute group-hover:bottom-4 uppercase left-[100px]">
                   {v.title}
                 </p>
               </div>
@@ -441,7 +441,7 @@ function Home() {
             </div>
 
             <div className="mb-[50px] lg:mb-[0px]">
-              <Button btn_text="Book call now!" btn_clr="#18314F" />
+              <ButtonComp btn_text="Book call now!" btn_clr="#18314F" />
             </div>
           </div>
         </div>
@@ -485,7 +485,7 @@ function Home() {
                   vibrant community but also earn extra income for each
                   successful referral.
                 </p>
-                <Button btn_text="refer now" btn_clr="#00AFEF" />
+                <ButtonComp btn_text="refer now" btn_clr="#00AFEF" />
               </div>
             </div>
           </div>
@@ -599,7 +599,7 @@ function Home() {
             data-aos="zoom-in"
             data-aos-delay="400"
           >
-            <Button btn_text="show all" btn_clr="#00AFEF" />
+            <ButtonComp btn_text="show all" btn_clr="#00AFEF" />
           </div>
         </div>
       </section>

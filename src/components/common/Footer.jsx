@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
 import { FaceBookIcon, FooterLogo, InstaGramIcon, TwiterIcon } from "./Icon";
 import { Link } from "react-router-dom";
+import ButtonComp from "./ButtonComp";
 
 function Footer() {
   return (
@@ -18,7 +18,7 @@ function Footer() {
               today to discover the allure of our models or to explore the
               opportunities of joining our exclusive agency.
             </p>
-            <Button
+            <ButtonComp
               btn_text="Apply now!"
               btn_clr="#18314F"
               link="/blogdeltailes"

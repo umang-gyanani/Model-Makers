@@ -1,5 +1,4 @@
 import React from "react";
-import talent_card from "../assets/image/png/talent_card.png";
 import { InstaGramIcon, TwiterIcon } from "../components/common/Icon";
 import { AboutGirlsData } from "../components/common/DummyData";
 

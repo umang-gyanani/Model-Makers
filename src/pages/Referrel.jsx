@@ -1,9 +1,10 @@
 import React from "react";
 import FormImg from "../assets/image/png/formgirl_img.png";
-import Button from "../components/common/Button";
+
 import { ReviewData } from "../components/common/DummyData";
 import SliderCard from "../components/common/SliderCard";
 import Faq from "../components/common/Faq";
+import ButtonComp from "../components/common/ButtonComp";
 const Referrel = () => {
   return (
     <>
@@ -140,7 +141,7 @@ const Referrel = () => {
                   </div>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="300">
-                  <Button btn_text="submit" btn_clr="#18314F" />
+                  <ButtonComp btn_text="submit" btn_clr="#18314F" />
                 </div>
               </form>
             </div>
