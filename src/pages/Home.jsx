@@ -6,7 +6,7 @@ import {
   TimeLineData,
 } from "../components/common/DummyData";
 import TrustedImg from "../assets/image/png/trusted_img.png";
-import Button from "../components/common/Button";
+import Button from "../components/common/ButtonComp";
 import YahooImg from "../assets/image/png/Yahoo_img.png";
 import TimelineGirl from "../assets/image/png/Timeline_girlimg.png";
 import {
@@ -23,8 +23,9 @@ import Marquee from "react-fast-marquee";
 import Faq from "../components/common/Faq";
 import Slider from "react-slick";
 import SliderCard from "../components/common/SliderCard";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import ButtonComp from "../components/common/ButtonComp";
 function Home() {
   var settings = {
     dots: true,
@@ -47,13 +48,7 @@ function Home() {
       },
     ],
   };
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // default animation duration (in ms)
-      once: true, // whether animation should happen only once
-    });
-  }, []);
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <>
@@ -187,7 +182,7 @@ function Home() {
 
       {/* ==================Yahoo================================= */}
 
-      <section className="overflow-hidden">
+      <section ref={ref} data-aos="zoom-in" data-aos-delay={200}>
         <div className="Yahoo_bg">
           <div className="container max-w-[1140px] m-auto px-3 relative z-30">
             <div className="md:pt-[147px] md:pb-[103px] py-[40px]">
@@ -199,7 +194,7 @@ function Home() {
                   data-aos-delay="0"
                 >
                   <p className="font-bold text-[40px] md:text-[45px] lg:text-[52px] text-white">
-                    21+
+                    {inView ? <CountUp end={100} duration={5} /> : "0"}+
                   </p>
                   <p className="font-normal text-[20px] text-white text-center">
                     Creators under Management
@@ -225,7 +220,7 @@ function Home() {
                   data-aos-delay="200"
                 >
                   <p className="font-bold text-[40px] md:text-[45px] lg:text-[52px] text-white">
-                    17
+                    {inView ? <CountUp end={19} duration={8} /> : "0"}+
                   </p>
                   <p className="font-normal text-[20px] text-white text-center">
                     Team members
@@ -310,11 +305,11 @@ function Home() {
 
         {/* Button */}
         <div
-          className="flex items-center justify-center mt-[38px]"
+          className="flex items-center justify-center mt-[38px] mb-[16px]"
           data-aos="zoom-in"
           data-aos-delay="400"
         >
-          <Button btn_text="Book call now!" btn_clr="#20B8F1" />
+          <ButtonComp btn_text="Book call now!" btn_clr="#20B8F1" />
         </div>
       </section>
 

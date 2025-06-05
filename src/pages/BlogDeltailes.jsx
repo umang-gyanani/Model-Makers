@@ -13,7 +13,8 @@ import {
 import SkyRocketImag from "../assets/image/png/skyrockate_img.png";
 import MyJourneyImag from "../assets/image/png/Myjourney_img.png";
 import EarningImg from "../assets/image/png/Earning_img.png";
-import Button from "../components/common/Button";
+import ButtonComp from "../components/common/ButtonComp";
+
 const BlogDeltailes = () => {
   return (
     <>
@@ -37,7 +38,7 @@ const BlogDeltailes = () => {
                   <img src={emailie} alt="emilie" />
                   <p className="font-bold text-[20px]">Emilie James</p>
                 </div>
-                <div className=" flex gap-3 items-center mt-5 sm:mt-20">
+                <div className=" flex gap-3 items-center mt-5 sm:mt-20 cursor-po">
                   <TwiterIcon />
                   <FaceBookIcon />
                   <InstaGramIcon />
@@ -191,7 +192,7 @@ const BlogDeltailes = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <Button btn_text="show all" btn_clr="#00AFEF" />
+            <ButtonComp btn_text="show all" btn_clr="#00AFEF" />
           </div>
         </div>
       </section>

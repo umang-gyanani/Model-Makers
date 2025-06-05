@@ -1,7 +1,7 @@
 import React from "react";
 import AboutStartImg from "../assets/image/png/aboutstart_img.png";
-import Button from "../components/common/Button";
 import { WhatWeDoData } from "../components/common/DummyData";
+import ButtonComp from "../components/common/ButtonComp";
 function About() {
   return (
     <>
@@ -39,10 +39,10 @@ function About() {
       </section>
 
       {/* ==========whatwedo=========== */}
-      <section className="overflow-hidden">
+      <section className=" overflow-hidden md:overflow-visible">
         <div className="aboutWhat_bg">
           <div
-            className="text-center pt-[50px] md:pt-[60px]  lg:pt-[83px] pb-[20px]  md:pb-[50px] lg:pb-[69px]"
+            className="text-center overflow-hidden pt-[50px] md:pt-[60px]  lg:pt-[83px] pb-[20px]  md:pb-[50px] lg:pb-[69px]"
             data-aos="fade-up"
           >
             <p className="font-bold text-[28px] sm:text-[36px] lg:text-[44px] uppercase">
@@ -90,7 +90,7 @@ function About() {
                           <p className="font-normal text-[18px] text-[#4C4E55] pt-[31px] pb-[24px]">
                             {v.Discription}
                           </p>
-                          <Button btn_text="apply now" btn_clr="#00AFEF" />
+                          <ButtonComp btn_text="apply now" btn_clr="#00AFEF" />
                         </div>
                       </div>
                     </div>

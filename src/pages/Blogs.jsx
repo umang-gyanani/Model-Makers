@@ -1,6 +1,6 @@
 import React from "react";
 import { WhatWeDoData } from "../components/common/DummyData";
-import Button from "../components/common/Button";
+import ButtonComp from "../components/common/ButtonComp";
 
 function Blogs() {
   return (
@@ -36,7 +36,7 @@ function Blogs() {
                       <p className="font-normal text-[18px] py-5 text-black md:text-[#fcfcfc]">
                         {v.Discription}
                       </p>
-                      <Button
+                      <ButtonComp
                         btn_text="apply now"
                         btn_clr="#18314f"
                         link="/blogdeltailes"

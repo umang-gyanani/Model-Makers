@@ -1,18 +1,21 @@
-import React, { useEffect } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Talents from "./pages/Talents";
 import Blogs from "./pages/Blogs";
 import BlogDeltailes from "./pages/BlogDeltailes";
-import { Link, Route, Routes, useLocation } from "react-router-dom";
+import {  Route, Routes, useLocation } from "react-router-dom";
 import Referrel from "./pages/Referrel";
-import Layout from "./Layout/Layout";
+const Layout = lazy(() => import("./Layout/Layout"));
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { RotateLoader } from "react-spinners";
 function App() {
   const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    
   }, [pathname]);
 
   const scrollToTop = () => {
@@ -22,7 +25,13 @@ function App() {
     });
   };
 
-  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, [pathname]);
+
   return (
     <div>
       <button
@@ -45,17 +54,24 @@ function App() {
           />
         </svg>
       </button>
-
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/talents" element={<Talents />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogdeltailes" element={<BlogDeltailes />} />
-          <Route path="/referrel" element={<Referrel />} />
-        </Route>
-      </Routes>
+      <Suspense
+        fallback={
+          <div className=" fixed top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 ">
+            <RotateLoader color="#00AFEF" />
+          </div>
+        }
+      >
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/talents" element={<Talents />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogdeltailes" element={<BlogDeltailes />} />
+            <Route path="/referrel" element={<Referrel />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </div>
   );
 }

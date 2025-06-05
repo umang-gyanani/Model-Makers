@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { CrossIcon, LogoIcon, MenuIcon } from "./common/Icon";
 import Button from "../components/common/Button";
 import { Link, useLocation } from "react-router-dom";
@@ -9,6 +9,8 @@ import about_img from "../assets/image/png/about_img.png";
 import talents_img from "../assets/image/png/talents_img.png";
 import raffrel_img from "../assets/image/png/referrel_img.png";
 import blog_img from "../assets/image/png/blog_img.png";
+import CountUp from "react-countup";
+import ButtonComp from "./common/ButtonComp";
 
 const Header = () => {
   const [shownav, setShownav] = useState(false);
@@ -30,7 +32,7 @@ const Header = () => {
       style={{ backgroundImage: `url(${bgImage})` }}
       className={`${
         location.pathname !== "/blogdeltailes" &&
-        "min-h-screen bg-cover bg-center flex flex-col"
+        "min-h-screen bg-cover bg-[75%] xl:bg-center flex flex-col"
       }`}
     >
       {/* Header Navbar */}
@@ -43,7 +45,7 @@ const Header = () => {
 
             <div>
               <ul
-                className={`flex items-center max-lg:fixed max-lg:top-[76px] lg:text-white text-[#18314F] ${
+                className={`flex items-center max-lg:fixed max-lg:top-[76px] lg:text-white text-[#00AFEF] ${
                   shownav ? "max-lg:left-0" : "max-lg:-left-full"
                 } max-lg:bg-white max-lg:z-50 max-lg:w-full max-lg:h-[calc(100vh-76px)] gap-[32px] max-lg:flex-col max-lg:items-center max-lg:justify-center duration-700`}
               >
@@ -52,7 +54,7 @@ const Header = () => {
                     to={"/about"}
                     onClick={() => setShownav(false)}
                     className={`${
-                      location.pathname === "/about" && " text-[#18314F]"
+                      location.pathname === "/about" && " text-[#00AFEF]"
                     } font-normal text-[16px]`}
                   >
                     About us
@@ -63,7 +65,7 @@ const Header = () => {
                     to={"/talents"}
                     onClick={() => setShownav(false)}
                     className={`${
-                      location.pathname === "/talents" && " text-[#18314F]"
+                      location.pathname === "/talents" && " text-[#00AFEF]"
                     } font-normal text-[16px]`}
                   >
                     Talents
@@ -74,7 +76,7 @@ const Header = () => {
                     to={"/referrel"}
                     onClick={() => setShownav(false)}
                     className={`${
-                      location.pathname === "/referrel" && " text-[#18314F]"
+                      location.pathname === "/referrel" && " text-[#00AFEF]"
                     } font-normal text-[16px]`}
                   >
                     Referral Program
@@ -85,14 +87,18 @@ const Header = () => {
                     to={"/blogs"}
                     onClick={() => setShownav(false)}
                     className={`${
-                      location.pathname === "/blogs" && " text-[#18314F]"
+                      location.pathname === "/blogs" && " text-[#00AFEF]"
                     } font-normal text-[16px]`}
                   >
                     Blogs
                   </Link>
                 </li>
                 <li>
-                  <Button btn_text="Apply Now" btn_clr="#18314F" />
+                  <Button
+                    btn_text="Apply Now"
+                    btn_clr="#18314F"
+                    link="/blogdeltailes"
+                  />
                 </li>
               </ul>
               <button
@@ -138,7 +144,7 @@ const Header = () => {
                       </p>
 
                       <div data-aos="zoom-in" data-aos-delay="400">
-                        <Button btn_text="Book Call Now" btn_clr="#20B8F1" />
+                        <ButtonComp btn_text="Book Call Now" btn_clr="#20B8F1" />
                       </div>
 
                       {location.pathname === "/" && (
@@ -148,7 +154,9 @@ const Header = () => {
                           className="flex items-center gap-[11px] mt-12 md:mt-[131px]"
                         >
                           <img src={HeaderSvg} alt="headersvg" />
-                          <p className="font-bold text-[24px]">+53 creators</p>
+                          <p className="font-bold text-[24px]">
+                            +<CountUp end={53} duration={5} /> creators
+                          </p>
                         </div>
                       )}
                     </div>
