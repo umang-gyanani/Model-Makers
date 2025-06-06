@@ -14,6 +14,7 @@ import SkyRocketImag from "../assets/image/png/skyrockate_img.png";
 import MyJourneyImag from "../assets/image/png/Myjourney_img.png";
 import EarningImg from "../assets/image/png/Earning_img.png";
 import ButtonComp from "../components/common/ButtonComp";
+import { Link } from "react-router-dom";
 
 const BlogDeltailes = () => {
   return (
@@ -38,11 +39,19 @@ const BlogDeltailes = () => {
                   <img src={emailie} alt="emilie" />
                   <p className="font-bold text-[20px]">Emilie James</p>
                 </div>
-                <div className=" flex gap-3 items-center mt-5 sm:mt-20 cursor-po">
-                  <TwiterIcon />
-                  <FaceBookIcon />
-                  <InstaGramIcon />
-                  <ShareIcon />
+                <div className=" flex gap-3 items-center mt-5 sm:mt-20 ">
+                  <Link to={""}>
+                    <TwiterIcon />
+                  </Link>
+                  <Link to={""}>
+                    <FaceBookIcon />
+                  </Link>
+                  <Link to={""}>
+                    <InstaGramIcon />
+                  </Link>
+                  <Link to={""}>
+                    <ShareIcon />
+                  </Link>
                 </div>
               </div>
               <div className=" absolute right-0 w-full h-full lg:h-auto  lg:w-auto -z-10 top-0">
@@ -143,7 +152,7 @@ const BlogDeltailes = () => {
                   <p className="font-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
                     10 Tips to Skyrocket Your OnlyFans Earnings
                   </p>
-                  <button className="flex items-center gap-[16px] bg-white border border-white">
+                  <button className="flex items-center gap-[16px] bg-white border border-white cursor-pointer">
                     <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
                       read more
                     </p>
@@ -162,7 +171,7 @@ const BlogDeltailes = () => {
                   <p className="font-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
                     10k to 1000k: my journey of success
                   </p>
-                  <button className="flex items-center gap-[16px] bg-white border border-white">
+                  <button className="flex items-center gap-[16px] bg-white border border-white cursor-pointer">
                     <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
                       read more
                     </p>
@@ -181,7 +190,7 @@ const BlogDeltailes = () => {
                   <p className="font-bold text-lg md:text-xl xl:text-[24px] uppercase pt-[27px] pb-[24px]">
                     earning $100 per day is not much hard...
                   </p>
-                  <button className="flex items-center gap-[16px] bg-white border border-white">
+                  <button className="flex items-center gap-[16px] bg-white border border-white cursor-pointer  ">
                     <p className="font-bold text-[16px] text-[#00AFEF] uppercase">
                       read more
                     </p>

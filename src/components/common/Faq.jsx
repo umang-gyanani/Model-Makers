@@ -51,7 +51,7 @@ const Faq = () => {
                     <div
                       className={`${
                         faqs === i ? "max-h-[200px]" : "max-h-[0px]"
-                      } overflow-hidden transition-all duration-700`}
+                      } overflow-auto lg:overflow-hidden transition-all duration-700`}
                     >
                       <p className="font-normal text-[18px] text-[#4C4E55] mt-[8px]">
                         {v.Discription}
